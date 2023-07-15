@@ -1,0 +1,62 @@
+{% extends "index.html" %}
+
+
+{% block title %} Language Detector {% endblock %}
+
+{% block main %}
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <div class="text-center">
+                <br>
+                <br>
+                <br>
+                <h1 class="text-white">Language Detector</h1>
+            </div>
+            <br>
+            <br>
+            <br>
+            <div class="table-responsive">
+                <table class="table">
+                    <form action="{{url_for('predict')}}" method="POST">
+                        <div class="form-group">
+                            <div class="fst-italic">
+                                <div class="text-white">
+                                    <label>Write a sentence in the language to be detected</label>
+                                </div>
+                            </div>
+
+                            <input class="form-control" type="text" name="text" placeholder="i am going to school tomorrow">
+                        </div>
+                        <br>
+                        <br>
+
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-primary btn-lg">Predict</button>
+                        </div>
+                    </form>
+                    <br>
+                    <form>
+                        <h1 class="text-white">{{ prediction }}</h1>
+                      
+                        <!-- <label class="text-white">  {{ prediction }} </label>
+                        <hr class="text-white" height:3px size=""> -->
+                        
+                       
+                    </form>
+                </table>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <div class="fst-italic">
+                    <footer class="text-white"> Made by AbuZayDin</footer>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
