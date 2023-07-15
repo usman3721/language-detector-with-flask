@@ -1,13 +1,9 @@
-import numpy as np
-import pandas as pd
+
 from flask import Flask, request, render_template
 import pickle
-from sklearn.feature_extraction.text import CountVectorizer
-from sklearn.preprocessing import LabelEncoder
-import re
 
-cv=CountVectorizer()
-le=LabelEncoder()
+
+
 
 app = Flask(__name__)
 
