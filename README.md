@@ -1,3 +1,3 @@
-# depoyment-of-email--slicer-using-render
+# deployment of language detector wweb app on render
 
-Here is the Link:  https://email-slicer-by-abuzaydin.onrender.com/
+Here is the Link:  
